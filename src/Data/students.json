@@ -1,0 +1,28 @@
+[
+    
+    {
+        "id" :1 ,
+        "imgUrl" : "/HackathonAfricaParticipants/IMG_1628.PNG",
+        "name" : "Emmanuel Nnam",
+        "info" : "“Hackathon Africa has given me the opportunity to increase my knowledge of software development and at the same time, provided the network I can leverage to make a great career. This is nothing short of wonderful.”"
+    },
+    {
+        "id" : 2,
+        "imgUrl" : "/HackathonAfricaParticipants/09A8E9D5-C34C-4CEB-812E-CCB32F4E1B3A(1).png",
+        "name" : "Okechukwu Nwachukwu",
+        "info" : "“I chose to attend the program because I wanted to be better equipped in my tech-career path. The program has pushed me to learn new and challenging things that I had no prior experience of, and I am so grateful for the space to learn and grow.”"
+    },
+    
+    {
+        "id" : 3,
+        "imgUrl" : "/HackathonAfricaParticipants/24BEB51F-3569-4124-8F0B-63662120A578.png",
+        "name" : "Sandra Nvene",
+        "info" : "“Since starting the Hackathon Africa program, I can proudly say I am on the right path to achieving my set goal. I am more than delighted and grateful. The journey is still on, and I am most certain I will get there.”"
+    },
+    {
+        "id" : 4,
+        "imgUrl" : "/HackathonAfricaParticipants/E6F1D6EB-6621-43BA-84BB-FB6D4D064C27.png",
+        "name" : "Ruth Ebube Chukwu",
+        "info" : "“I came to the Africaplan foundation bootcamp knowing so little about software. I was almost at point zero. But I have continued to build confidence writing codes from memory with the knowledge acquired.”"
+    }
+]
