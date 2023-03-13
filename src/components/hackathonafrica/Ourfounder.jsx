@@ -6,7 +6,7 @@ export default function Ourfounder() {
   return (
     <div id='ourfounder' className='w-full bg-gray-200 py-20 px-4'>
         <div className='max-w-[1536px] mx-auto grid sm:grid-cols-2 md:grid-cols-2'>
-            <img className='w-[550px] md:h-[600px] mx-auto my-4 sm:h-[530px]' src={MrOni} alt='Mr-Oni' />
+            <img className='w-[550px] md:h-[600px] mx-auto my-4 sm:h-[530px] h-[550px]' src={MrOni} alt='Mr-Oni' />
             <div className='px-5 flex flex-col justify-center'>
                 <h2 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2 text-center sm:text-left'>Note From Our Founder</h2>
                 <p className='text-center sm:text-left sm:mb-8'>
@@ -14,8 +14,8 @@ export default function Ourfounder() {
                     However, this evolving reality seemed to have been lost on the continent as it faces the deepest digital skills gap globally. The implication is that, despite abundant talents, the lack of digital skills continues to stifle opportunities in an age where it is estimated that more than 70% of jobs over the next decade, according to a recent study by Oxford Economics, require advanced digital skills. 
                     When I started out more than two decades ago, opportunities requiring no digital skills existed in diverse …
                 </p>
-                    <button className='bg-[#FFD300] text-white rounded-md font-medium w-[200px] my-6 px-6 py-3'>
-                        <Link smooth to='/foundersnote#founderhead' className='px-9 py-3'>
+                    <button className='bg-[#FFD300] text-white rounded-md font-medium w-[250px] mx-auto sm:mx-0 my-6 px-6 py-3'>
+                        <Link smooth to='/foundersnote#founderhead' className='px-7 py-3'>
                             Read More
                         </Link>
                     </button>

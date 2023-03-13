@@ -12,7 +12,7 @@ export default function Founderbody() {
                 <p className='text-left sm:text-left sm:mb-8 font-medium mb-5 text-xl'>{notes.problembody}</p>
                 <br />
                 <p className='text-left sm:text-left sm:mb-8 font-medium text-xl'>{notes.solutionintro}</p>
-                <ol className='pl-5 text-left sm:text-left sm:mb-8 font-medium mb-5 text-xl' style={{listStyle : 'type=1'}}>
+                <ol className='pl-5 text-left sm:text-left sm:mb-8 font-medium mb-5 text-xl' style={{listStyle : `type='1'`}}>
                     <li>{notes.solutionlist1}</li>
                     <li>{notes.solutionlist2}</li>
                     <li>{notes.solutionlist3}</li>
