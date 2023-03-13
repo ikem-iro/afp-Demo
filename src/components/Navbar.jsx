@@ -15,7 +15,10 @@ export default function Navbar() {
     ];
 
     const [open, setOpen] = useState(false);
-    const closeMobileMenu = () => setOpen(!open)
+    const closeMobileMenu = () => {
+        if(!open) return;
+        else setOpen(!open)
+    }
     const [isMedium, setIsMedium] = useState({
         winwidth : window.innerWidth
     });
@@ -38,7 +41,7 @@ export default function Navbar() {
         <div className='shadow-md w-full fixed top-0 left-0 z-10'>
             <div className=' md:flex md:items-center md:justify-between bg-[#000300] py-4 md:px-10 px-7'>
                 <div className='flex justify-between item-center'>
-                    <Link to='/#' className='font-bold text-3xl pr-73 text-[#fff] cursor-pointer'>
+                    <Link onClick={closeMobileMenu} to='/#' className='font-bold text-3xl pr-73 text-[#fff] cursor-pointer'>
                         {isMedium.winwidth <= 767 ?  <span className='pt-2 text-3xl font-bold text-[#fff]'><IoEarth className='text-3xl text-white pt-2' size={40} /></span> : <h1 className='p-4 w-full text-3xl font-bold text-[#fff]'>TheAfricaPlanFoundation</h1>}
                     </Link>
                     <div onClick={()=> setOpen(!open)} className={`text-white ${isMedium.winwidth <= 767 ? 'mt-1' : 'mt-5'} md:hidden block cursor-pointer`}>
