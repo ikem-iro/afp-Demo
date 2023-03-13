@@ -11,7 +11,7 @@ export default function Navbar() {
         {name : 'Our Projects', link:'/#ourprojects'},
         {name : 'Contact Us', link:'/#contactus'},
         {name : 'Hackathon Africa', link:'/hackathonafrica#hero'},
-        {name : 'Blog', link:'/blog'}
+        {name : 'Blog',}
     ];
 
     const [open, setOpen] = useState(false);
@@ -52,9 +52,11 @@ export default function Navbar() {
                     md:w-auto md:pl-0 pl-9 transition-all duration-500 
                     ease-in ${open ? 'top-19 opacity-100' : 'top-[-490px] md:opacity-100 opacity-0'}`}>
                    {Links.map((link) => (
-                    <li key={link.name} onClick={closeMobileMenu} className='text-[#fff] md:ml-8 text-xl md:my-0 my-7 '>
-                        <Link smooth={true} offset={100} to={link.link} className='hover:text-gray-400 duration-500' >{link.name}</Link>
-                    </li>
+                    <Link key={link.name} smooth={true}  to={link.link}>
+                        <li  onClick={closeMobileMenu} className='text-[#fff] md:ml-8 text-xl md:my-0 my-7 hover:text-gray-400 duration-500 '>
+                            {link.name}
+                        </li>
+                    </Link>
                    ))}
                 </ul>
             </div>
