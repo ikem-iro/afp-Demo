@@ -4,9 +4,9 @@ import MrOni from '../../assets/MrOni.jpeg'
 
 export default function Ourfounder() {
   return (
-    <div id='ourfounder' className='w-full bg-white py-20 px-4'>
-        <div className='max-w-[1536px] mx-auto grid md:grid-cols-2'>
-            <img className='w-[550px] h-[600px] mx-auto my-4' src={MrOni} alt='Mr-Oni' />
+    <div id='ourfounder' className='w-full bg-gray-200 py-20 px-4'>
+        <div className='max-w-[1536px] mx-auto grid sm:grid-cols-2 md:grid-cols-2'>
+            <img className='w-[550px] md:h-[600px] mx-auto my-4 sm:h-[530px]' src={MrOni} alt='Mr-Oni' />
             <div className='px-5 flex flex-col justify-center'>
                 <h2 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2 text-center sm:text-left'>Note From Our Founder</h2>
                 <p className='text-center sm:text-left sm:mb-8'>
@@ -15,7 +15,7 @@ export default function Ourfounder() {
                     When I started out more than two decades ago, opportunities requiring no digital skills existed in diverse …
                 </p>
                     <button className='bg-[#FFD300] text-white rounded-md font-medium w-[200px] my-6 px-6 py-3'>
-                        <Link smooth to='/foundersnote#founderhead'>
+                        <Link smooth to='/foundersnote#founderhead' className='px-9 py-3'>
                             Read More
                         </Link>
                     </button>

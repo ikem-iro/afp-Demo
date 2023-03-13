@@ -3,8 +3,8 @@ import Girl from '../assets/girl.jpg'
 
 export default function Aboutus() {
   return (
-    <div id='aboutus' className='w-full bg-white py-20 px-4'>
-        <div className='max-w-[1536px] mx-auto grid md:grid-cols-2'>
+    <div id='aboutus' className='w-full bg-gray-200 py-20 px-4'>
+        <div className='max-w-[1536px] mx-auto grid md:grid-cols-2 sm:grid-cols-2'>
             <div className='flex flex-col justify-center'>
                 <h2 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2 text-center sm:text-left'>About Us</h2>
                 <p className='text-center sm:text-left sm:mb-8'>

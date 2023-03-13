@@ -5,7 +5,7 @@ import { SiJavascript, SiExpress, SiMongodb } from 'react-icons/si'
 
 export default function WeTeach() {
   return (
-    <div className='w-full bg-white py-20 px-4'>
+    <div className='w-full bg-gray-200 py-20 px-4'>
         <div className='max-w-[1536px] mx-auto grid sm:grid-cols-2'>
             <div className='flex flex-col justify-center'>
                 <h2 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2 text-center mb-5'>We Teach</h2>
@@ -38,7 +38,7 @@ export default function WeTeach() {
                     <SiMongodb className='pl-2' size={40}/>
                 </div>
             </div>
-            <img className='w-[550px] h-[600px] mx-auto my-4' src={Learning} alt="" />
+            <img className='w-[550px] md:h-[600px] sm:h-[500px] mx-auto my-4' src={Learning} alt="learning-img" />
         </div>
     </div>
   )

@@ -7,8 +7,8 @@ import VentureClash from '../assets/OurProjectsjpegs/ventureclash2.png'
 export default function Ourprojects() {
   return (
     <div id='ourprojects' className='w-full py-20 px-4 bg-white'>
-        <h2 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2 text-center mb-[2rem]'>Our Projects</h2>
-        <div className='max-w-[1536px] mx-auto grid md:grid-cols-4 gap-8'>
+        <h2 className='md:text-4xl sm:text-3xl text-2xl font-bold pt-10 text-center mb-[2rem]'>Our Projects</h2>
+        <div className='max-w-[1536px] mx-auto grid md:grid-cols-4 gap-8 sm:grid-cols-2'>
             <div className='bg-gray-100 w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300'>
                 <img className='mx-auto h-[220px]' src={Hackathon} alt="image from hackathonafrica" />
                 <h3 className='text-2xl font-bold text-center py-8'>HackathonAfrica 2022</h3>

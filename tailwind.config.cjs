@@ -6,20 +6,23 @@ module.exports = {
   ],
   theme: {
     screens: {
-      'sm': '768px',
-      // => @media (min-width: 640px) { ... }
+      'xs': '375px',
+      // => @media (min-width: 479px) { ... }
+      
 
-      'md': '1273px',
+      'sm': '1006px',
       // => @media (min-width: 960px) { ... }
 
-      'lg': '1274px',
+      'md': '1269px',
       // => @media (min-width: 1024px) { ... }
 
-      'xl': '1280px',
+      'lg': '1285px',
       // => @media (min-width: 1280px) { ... }
 
-      '2xl': '1536px',
+      'xl': '1536px',
       // => @media (min-width: 1536px) { ... }
+
+      '2xl' : '3072px'
 
     },
     transitionDuration: {

@@ -4,7 +4,7 @@ import MrOni from '../../assets/MrOni.jpeg'
 
 export default function Founderheader() {
   return (
-    <div id='founderhead' className='w-full bg-white py-20 px-4'>
+    <div id='founderhead' className='w-full bg-gray-200 py-20 px-4'>
         <div className='max-w-[1536px] mt-20 mx-auto grid md:grid-cols-2'>
         <div className='flex flex-col justify-center'>
                 <h2 className='md:text-5xl sm:text-4xl text-3xl font-bold mb-5 py-2 text-center sm:text-left'>Note From Our Founder</h2>

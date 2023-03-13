@@ -4,7 +4,7 @@ import notes from '../../Data/note.json'
 
 export default function Founderbody() {
   return (
-    <div className='w-full bg-white py-20 px-5'>
+    <div className='w-full bg-gray-200 py-20 px-5'>
          <div className='max-w-[1536px] mx-auto'>
                 <p className='text-center sm:text-left sm:mb-8 font-medium mb-5 text-xl'>{notes.intro}</p>
                 <br />
