@@ -1,7 +1,22 @@
-import React from 'react'
-import Girl from '../assets/girl.jpg'
+import React, { useEffect, useState } from 'react'
+import photos from '../Data/about-us.json'
+
 
 export default function Aboutus() {
+    const [slide, setSlide] = useState(0);
+
+  useEffect(() => {
+    setTimeout(()=>{
+      nextSlide();
+    },10000)
+  })
+
+
+    const length = photos.length  
+    const nextSlide = () => {
+      setSlide(slide === 0 ? length - 1 : slide - 1)
+    }
+
   return (
     <div id='aboutus' className='w-full bg-gray-200 py-20 px-4'>
         <div className='max-w-[1536px] mx-auto grid md:grid-cols-2 sm:grid-cols-2'>
@@ -26,7 +41,13 @@ export default function Aboutus() {
                     as well as supporting access to reproductive health education and menstrual hygiene products for women and girls in developing countries.
                 </p>
                 </div>
-            <img className='w-[550px] h-[600px] mx-auto my-4' src={Girl} alt='Girl' />
+                <div className='max-w-full mx-auto px-4 py-20 relative flex justify-center items-center'>
+                    {photos.map((item, index) =>(
+                        <div key={index} className={index === slide ? 'opacity-100' : 'opacity-0'}>
+                            {index === slide &&  (<img className='rounded-md ease-linear h-[408px] w-[612px]' src={item.imgUrl} alt="/" />)}
+                        </div>
+                    ))}
+                </div>
         </div>
     </div>
   )
