@@ -20,7 +20,7 @@ export default function Gallery() {
       <MdKeyboardDoubleArrowRight onClick={nextSlide} className='absolute top-[50%] text-white cursor-pointer right-8' size={50}/>
       {slides.map((item, index) =>(
         <div key={index} className={index === slide ? 'opacity-100' : 'opacity-0'}>
-          {index === slide &&  (<img className='w-full rounded-md duration-600 ease-linear' src={item.imgUrl} alt="/" />)}
+          {index === slide &&  (<img className='md:w-[1536px] rounded-md duration-600 ease-linear md:h-[960px]' src={item.imgUrl} alt="/" />)}
         </div>
       ))}
     </div>
