@@ -41,10 +41,10 @@ export default function Aboutus() {
                     as well as supporting access to reproductive health education and menstrual hygiene products for women and girls in developing countries.
                 </p>
                 </div>
-                <div className='max-w-full mx-auto px-4 py-20 relative flex justify-center items-center'>
+                <div className='group w-full h-full mx-auto px-4 py-20 relative flex justify-center items-center'>
                     {photos.map((item, index) =>(
                         <div key={index} className={index === slide ? 'opacity-100' : 'opacity-0'}>
-                            {index === slide &&  (<img className='rounded-md ease-linear h-[408px] w-[612px]' src={item.imgUrl} alt="/" />)}
+                            {index === slide &&  (<img className='rounded-md ease-linear sm:h-[408px] sm:w-[612px]' src={item.imgUrl} alt="/" />)}
                         </div>
                     ))}
                 </div>

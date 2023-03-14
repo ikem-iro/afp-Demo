@@ -38,7 +38,7 @@ export default function Contact() {
                 <div className='w-[100%] mx-auto grid grid-cols-1 sm:grid-cols-3'>
                     <div className='mt-5 mb-4 items-center flex flex-col p-4 my-4 sm:mx-0 sm:text-left md:mx-0 md:text-center mx-auto text-center '>
                         <BsPhone size={50} className='text-[#ffd300] mb-4'/>
-                        <p>Call Us</p>
+                        <p>08021235678</p>
                     </div>
                     <div className='mt-5 mb-4 items-center flex flex-col p-4 my-4 sm:mx-0 sm:text-center md:mx-0 md:text-center mx-auto text-center'>
                         <MdOutlineAlternateEmail size={50} className='text-[#ffd300] mb-4'/>

@@ -39,10 +39,10 @@ export default function Navbar() {
 
     return(
         <div className='shadow-md w-full fixed top-0 left-0 z-10'>
-            <div className=' md:flex md:items-center md:justify-between bg-[#000300] py-4 md:px-10 px-7'>
+            <div className=' md:flex md:items-center md:justify-between bg-[#060D0D] py-4 md:px-10 px-7'>
                 <div className='flex justify-between item-center'>
                     <Link onClick={closeMobileMenu} to='/#' className='font-bold text-3xl pr-73 text-[#fff] cursor-pointer'>
-                        {isMedium.winwidth <= 767 ?  <span className='pt-2 text-3xl font-bold text-[#fff]'><IoEarth className='text-3xl text-white pt-2' size={40} /></span> : <h1 className='p-4 w-full text-3xl font-bold text-[#fff]'>TheAfricaPlanFoundation</h1>}
+                        {isMedium.winwidth <= 767 ?  <span className='pt-2 text-3xl font-bold text-[#fff]'><IoEarth className='text-3xl text-[#FFD300] pt-2' size={40} /></span> : <h1 className='p-4 w-full text-3xl font-bold text-[#fff]'>TheAfricaPlanFoundation</h1>}
                     </Link>
                     <div onClick={()=> setOpen(!open)} className={`text-white ${isMedium.winwidth <= 767 ? 'mt-1' : 'mt-5'} md:hidden block cursor-pointer`}>
                     {open ? <AiOutlineClose size={40} /> : <AiOutlineMenu size={35} />}
@@ -51,7 +51,7 @@ export default function Navbar() {
                 <ul 
                     className={`md:flex md:items-center 
                     md:pb-0 pb-12 absolute md:static 
-                    bg-[#000300] md:z-auto z-[-1] left-0 w-full 
+                    bg-[#060d0d] md:z-auto z-[-1] left-0 w-full 
                     md:w-auto md:pl-0 pl-9 transition-all duration-500 
                     ease-in ${open ? 'top-19 opacity-100' : 'top-[-490px] md:opacity-100 opacity-0'}`}>
                    {Links.map((link) => (
