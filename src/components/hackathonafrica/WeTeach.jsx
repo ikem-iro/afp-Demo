@@ -35,25 +35,25 @@ export default function WeTeach() {
                     </div>
                     <div className='flex flex-col'>
                         <div className='flex sm:justify-start justify-center items-center'>
-                            <h4 className='text-xl font-medium py-2 text-center'>React Js</h4>
+                            <h4 className='text-xl font-medium py-2 text-center'>ReactJs</h4>
                             <FaReact className='pl-2 text-[#88dded]' size={30}/>
                         </div>
                     </div>
                     <div className='flex flex-col'>
                         <div className='flex sm:justify-start justify-center items-center'>
-                            <h4 className='text-xl font-medium py-2 text-center'>Node Js</h4>
+                            <h4 className='text-xl font-medium py-2 text-center'>NodeJs</h4>
                             <FaNodeJs className='pl-2 text-[#3c873a]' size={30}/>
                         </div>
                     </div>
                     <div className='flex flex-col'>
                         <div className='flex sm:justify-start justify-center items-center'>
-                            <h4 className='text-xl font-medium py-2 text-center'>Express Js</h4>
+                            <h4 className='text-xl font-medium py-2 text-center'>ExpressJs</h4>
                             <SiExpress className='pl-2' size={30}/>
                         </div>
                     </div>
                     <div className='flex flex-col col-start-2 col-end-3 sm:col-start-1 sm:col-end-2 mb-1'>
                         <div className='flex sm:justify-start justify-center items-center'>
-                            <h4 className='text-xl font-medium py-2 text-center'>Mongo DB</h4>
+                            <h4 className='text-xl font-medium py-2 text-center'>MongoDB</h4>
                             <SiMongodb className='pl-2 text-[#589636]' size={30}/>
                         </div>
                     </div>
