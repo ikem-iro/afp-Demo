@@ -33,8 +33,8 @@ export default function Contact() {
     <div id='contactus' className='bg-[#060d0d] w-full py-16 text-white px-4'>
         <div className='max-w-[1536px] mx-auto grid md:grid-cols-2'>
            <div className='lg:col-span-1 px-4'>  
-                <h2 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2 sm:text-left md:text-left text-center mb-3'>Get In Touch With Us</h2>
-                <p className='mb-5 sm:text-left md:text-left text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, totam quibusdam? Numquam, eos illum. Consequuntur facere ea impedit alias obcaecati.</p>
+                <h2 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2 text-center sm:text-justify mb-3'>Get In Touch With Us</h2>
+                <p className='mb-5 text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, totam quibusdam? Numquam, eos illum. Consequuntur facere ea impedit alias obcaecati.</p>
                 <div className='w-[100%] mx-auto grid grid-cols-1 sm:grid-cols-3'>
                     <div className='mt-5 mb-4 items-center flex flex-col p-4 my-4 sm:mx-0 sm:text-left md:mx-0 md:text-center mx-auto text-center '>
                         <BsPhone size={50} className='text-[#ffd300] mb-4'/>
