@@ -30,7 +30,7 @@ export default function Contact() {
     }
 
   return (
-    <div id='contactus' className='bg-[#000300] w-full py-16 text-white px-4'>
+    <div id='contactus' className='bg-[#060d0d] w-full py-16 text-white px-4'>
         <div className='max-w-[1536px] mx-auto grid md:grid-cols-2'>
            <div className='lg:col-span-1 px-4'>  
                 <h2 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2 sm:text-left md:text-left text-center mb-3'>Get In Touch With Us</h2>
@@ -53,8 +53,8 @@ export default function Contact() {
            <div className='my-4'>
                 <form onSubmit={handleSubmit} className='px-4'>
                     <div className='flex justify-between'>
-                        <input className='p-3 mb-5 w-[49.5%] rounded-md text-black' type='text' placeholder='Enter Your Name' value={contact.fName} onChange={updateContact} name='fName' required/>
-                        <input className='p-3 mb-5 w-[49.5%] rounded-md text-black' type='email' placeholder='Enter Email' value={contact.email} onChange={updateContact} name='email' required/>
+                        <input className='p-3 mb-5 w-[49.5%] rounded-md text-black' type='text' placeholder='FullName' value={contact.fName} onChange={updateContact} name='fName' required/>
+                        <input className='p-3 mb-5 w-[49.5%] rounded-md text-black' type='email' placeholder='johndoe@example.com' value={contact.email} onChange={updateContact} name='email' required/>
                     </div>
                     <textarea className='p-3 w-full rounded-md text-black' type='text' placeholder='Leave us a message'rows='3' cols='50' value={contact.message} onChange={updateContact} name='message' required />
                     <button className='bg-[#FFD300] text-white rounded-md font-medium w-full my-6 px-6 py-3'>Submit</button>

@@ -13,7 +13,7 @@ export default function Gallery() {
     setSlide(slide === 0 ? length - 1 : slide - 1)
   }
   return (
-    <div className='w-full bg-[#000300] py-20 px-4'>
+    <div className='w-full bg-[#060d0d] py-20 px-4'>
       <h2 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2 text-center text-white'>Gallery</h2>
     <div className='max-w-[1536px] mx-auto px-4 py-20 group relative flex justify-center items-center'>
       <MdKeyboardDoubleArrowLeft onClick={prevSlide} className='hidden group-hover:block absolute top-[50%] text-white/70 cursor-pointer left-5' size={50}/>

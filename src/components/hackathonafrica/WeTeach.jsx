@@ -1,9 +1,21 @@
-import React from 'react'
-import Learning from '../../assets/IMG9003.jpg'
+import React, { useEffect, useState } from 'react'
+import learning from '../../Data/learning.json'
 import { FaReact, FaHtml5, FaCss3, FaNodeJs } from 'react-icons/fa'
 import { SiJavascript, SiExpress, SiMongodb } from 'react-icons/si'
 
 export default function WeTeach() {
+    const [ slide, setSlide ] = useState(0);
+
+    const length = learning.length;
+    const nextSlide = () => {
+        setSlide(slide === 0 ? length - 1 : slide -1)
+    };
+
+    useEffect(()=> {
+        setTimeout(()=>{
+            nextSlide();
+        }, 10000)
+    })
   return (
     <div className='w-full bg-gray-200 py-20 px-4'>
         <div className='max-w-[1536px] mx-auto grid sm:grid-cols-2'>
@@ -67,8 +79,19 @@ export default function WeTeach() {
                     Following the completion of the bootcamp, participants undergo internships with our recruiting internship partners.
                 </p>
             </div>
-            <img className='w-[490px] sm:[550px] md:h-[600px] sm:h-[500px] h-[400px] mx-auto my-4' src={Learning} alt="learning-img" />
+            <div className='group w-full h-full mx-auto px-4 py-20 relative flex justify-center items-center'>
+                {learning.map((item, index) => (
+                    <div key={index} className={index === slide ? 'opacity-100' : 'opacity-0'}>
+                        {index === slide &&  (<img className='shadow-2xl shadow-slate-200/90 rounded-md ease-linear w-[500px] sm:h-[450px] h-[400px]' src={item.imgUrl} alt="/" />)}
+                    </div>
+                ))}
+            </div>
         </div>
     </div>
   )
 }
+
+
+
+
+{/* <img className='w-[490px] sm:[550px] md:h-[600px] sm:h-[500px] h-[400px] mx-auto my-4' src={Learning} alt="learning-img" /> */}
