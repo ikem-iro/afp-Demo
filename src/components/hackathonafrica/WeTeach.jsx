@@ -102,7 +102,7 @@ export default function WeTeach() {
                 <div ref={slideRef} className='group w-full h-full mx-auto px-4 py-20 relative flex justify-center items-center'>
                     {learning.map((item, index) => (
                         <div key={index}>
-                            {index === slide &&  (<img className='rounded-md  sm:w-[500px] sm:h-[450px] h-[390px] w-[430px]' src={item.imgUrl} alt="/" />)}
+                            {index === slide &&  (<img className='rounded-md md:w-[450px] md:h-[450px] h-full w-full' src={item.imgUrl} alt="/" />)}
                         </div>
                     ))}
                 </div>
