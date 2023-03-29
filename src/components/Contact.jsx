@@ -2,14 +2,17 @@ import React, { useState } from 'react'
 import { BsPhone } from 'react-icons/bs'
 import { MdOutlineAlternateEmail } from 'react-icons/md'
 import { HiOutlineLocationMarker } from 'react-icons/hi'
+import axios from 'axios'
 
 export default function Contact() {
 
     const [ contact, setContact ] = useState({
-        fName : '',
+        name : '',
         email : '',
         message : ''
     });
+    const [ successMsg, setSuccessMsg ] = useState('');
+    const [ errMsg, setErrMsg ] = useState('');
     
     function updateContact (event) {
         const { name, value } = event.target;
@@ -19,14 +22,35 @@ export default function Contact() {
         }));
     }
 
-    function handleSubmit (event) {
-        console.log(contact);
-        event.preventDefault();
-        setContact({
-            fName: '',
-            email : '',
-            message : ''
-        })
+    const posturl = import.meta.env.VITE_REACT_CONTACT_URI
+
+    async function handleSubmit (e) {
+        // console.log(contact);
+        e.preventDefault();
+        try{
+            const response = await axios.post(posturl , contact, {
+                headers : { 'Content-Type' : 'application/json'}
+            });
+            console.log(response.data);
+            setSuccessMsg("Successfully sent! ✅");
+            setContact({
+                name: '',
+                email : '',
+                message : ''
+            });
+            setTimeout(()=>{
+                setSuccessMsg('')
+            },5000)
+        }catch(err){
+            if(!err?.response){
+                setErrMsg("No Server Resonse ❌");
+            }else if(err.response ?.status === 400){
+                setErrMsg('Failed to send message ❌')
+            }
+            setTimeout(()=>{
+                setErrMsg('');
+            },5000);
+        }
     }
 
   return (
@@ -51,9 +75,10 @@ export default function Contact() {
                 </div>
            </div>
            <div className='my-4'>
+                <p className='p-3 w-full mx-auto text-center'>{successMsg ? successMsg : errMsg}</p>
                 <form onSubmit={handleSubmit} className='px-4'>
                     <div className='flex justify-between'>
-                        <input className='p-3 mb-5 w-[49.5%] rounded-md text-black' type='text' placeholder='FullName' value={contact.fName} onChange={updateContact} name='fName' required/>
+                        <input className='p-3 mb-5 w-[49.5%] rounded-md text-black' type='text' placeholder='FullName' value={contact.name} onChange={updateContact} name='name' required/>
                         <input className='p-3 mb-5 w-[49.5%] rounded-md text-black' type='email' placeholder='johndoe@example.com' value={contact.email} onChange={updateContact} name='email' required/>
                     </div>
                     <textarea className='p-3 w-full rounded-md text-black' type='text' placeholder='Leave us a message'rows='3' cols='50' value={contact.message} onChange={updateContact} name='message' required />

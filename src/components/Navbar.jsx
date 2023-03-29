@@ -11,7 +11,7 @@ export default function Navbar() {
         {name : 'Our Projects', link:'/#ourprojects'},
         {name : 'Contact Us', link:'/#contactus'},
         {name : 'Hackathon Africa', link:'/hackathonafrica#hero'},
-        {name : 'Blog',}
+        // {name : 'Blog',}
     ];
 
     const [open, setOpen] = useState(false);

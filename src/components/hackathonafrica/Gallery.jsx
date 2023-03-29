@@ -56,7 +56,7 @@ export default function Gallery() {
       <MdKeyboardDoubleArrowRight onClick={nextSlide} className='hidden group-hover:block absolute top-[50%] text-white/70 cursor-pointer right-5' size={50}/>
       {slides.map((item, index) =>(
         <div key={index}>
-          {index === slide &&  (<img className='md:w-full md:h-full rounded-md duration-500' src={item.imgUrl} alt="/" height='780px' width='1536px' />)}
+          {index === slide &&  (<img className='w-full h-[700px] md:h-[780px] rounded-md duration-500' src={item.imgUrl} alt="/" height='780px' width='1536px' />)}
         </div>
       ))}
     </div>

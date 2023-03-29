@@ -41,7 +41,7 @@ export default function WeTeach() {
                         </p>
                     </blockquote>
                     <figcaption className="font-medium">
-                        <div className='w-[100%] mx-auto grid grid-cols-3 mb-1'>
+                        <div className='w-[100%] mx-auto grid grid-cols-2 sm:grid-cols-3 mb-1'>
                             <div className='flex flex-col'>
                                 <div className='flex justify-center sm:justify-start items-center'>
                                     <h4 className='text-xl font-medium py-2 text-center'>HTML</h4>
@@ -78,7 +78,7 @@ export default function WeTeach() {
                                     <SiExpress className='pl-2' size={30}/>
                                 </div>
                             </div>
-                            <div className='flex flex-col col-start-2 col-end-3 sm:col-start-1 sm:col-end-2 mb-1'>
+                            <div className='flex flex-col col-start-1 col-span-2 sm:col-start-1 sm:col-end-2 mb-1'>
                                 <div className='flex sm:justify-start justify-center items-center'>
                                     <h4 className='text-xl font-medium py-2 text-center'>MongoDB</h4>
                                     <SiMongodb className='pl-2 text-[#589636]' size={30}/>
@@ -102,7 +102,7 @@ export default function WeTeach() {
                 <div ref={slideRef} className='group w-full h-full mx-auto px-4 py-20 relative flex justify-center items-center'>
                     {learning.map((item, index) => (
                         <div key={index}>
-                            {index === slide &&  (<img className='rounded-md  w-[500px] sm:h-[450px] h-[430px]' src={item.imgUrl} alt="/" />)}
+                            {index === slide &&  (<img className='rounded-md  sm:w-[500px] sm:h-[450px] h-[390px] w-[430px]' src={item.imgUrl} alt="/" />)}
                         </div>
                     ))}
                 </div>

@@ -9,7 +9,7 @@ export default function Ourfounder() {
             <figure className="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-100">
                 <img className="w-[330px] h-[330px] md:w-[550px] md:h-[611px] md:rounded-md rounded-full mx-auto" src={MrOni} alt="" width="384" height="512" />
                 <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
-                <h2 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2 text-center md:text-left'>Note From Our Founder</h2>
+                <h2 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2 text-center md:text-left'>A Note From Our Founder</h2>
                     <blockquote>
                         <p className="text-lg text-justify font-medium">
                             The common saying that talent is equally distributed, but opportunity is not, appears to resonate more in Africa than in any other part of the emerging market. Advances in software technology have changed and continue to change the world, redefining the workplace and redistributing opportunities in unprecedented ways.
